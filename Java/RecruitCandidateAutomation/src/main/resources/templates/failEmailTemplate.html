@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Interest</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 650px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e6e6e6;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 25px;
+            font-size: 16px;
+        }
+        .content h2 {
+            color: #ff7e5f;
+            margin-top: 20px;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .options ul {
+            padding-left: 20px;
+        }
+        .options ul li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        .options ul li a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+        .options ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #ff7e5f;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 3px solid #feb47b;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .footer a:hover {
+            text-decoration: none;
+        }
+        .feedback-section {
+            background-color: #fff7e6;
+            border-left: 4px solid #ff7e5f;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .feedback-section h3 {
+            color: #ff7e5f;
+            margin-bottom: 10px;
+        }
+        .feedback-section p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Thank You for Your Interest!</h1>
+        </div>
+        <div class="content">
+            <p>Dear <strong>{candidateFirstname} {candidateLastname}</strong>,</p>
+
+            <p>We sincerely appreciate your interest in joining our team. Unfortunately, the selection process for the position you applied for has been completed, or there are currently no vacancies available for this role.</p>
+
+            <p>Your resume has been added to our database, and we will review your application again should a matching position become available in the future.</p>
+
+			<div class="feedback-section">
+                <h3>Team Feedback</h3>
+                <p><strong>{candidateFirstname},</strong> thank you again for your interest in the position. We were impressed by your qualifications and the experience you bring to the table but we are unable to offer you the role at this time.</p>
+				<p>{feedback}</p>
+            </div>
+			
+            <h2>Next Steps</h2>
+            <p>In the meantime, we encourage you to explore the following options:</p>
+            <div class="options">
+                <ul>
+                    <li>Explore other opportunities on our website: <a href="#" target="_blank">www.website.com</a>. You might find a role that better aligns with your skills and aspirations.</li>
+                    <li>Consider enhancing your expertise through practical experience or further education. Building your skillset can lead to even more exciting career opportunities.</li>
+                </ul>
+            </div>
+            <p>We wish you the very best in your career journey and hope to connect with you again in the future.</p>
+
+          
+        </div>
+        <div class="footer">
+            <p>Best regards,</p>
+            <p><strong>The Recruitment Team</strong></p>
+            <p>Need help? Visit our <a href="#" target="_blank">Help Center</a> or contact us at <a href="mailto:support@website.com">support@website.com</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

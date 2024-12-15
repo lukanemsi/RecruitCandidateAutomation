@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! You're Almost Part of Our Team!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .email-content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .signature {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #777;
+        }
+        .emoji {
+            font-size: 30px;
+        }
+        .cta-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+        .feedback-section {
+            background-color: #e6f7e6;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .feedback-section h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .feedback-section p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="email-container">
+    <div class="email-header">
+        Congratulations {candidateFirstname}! You're Almost Part of Our Team!
+    </div>
+    <div class="email-content">
+        <p>Dear <span class="highlight">{candidateFirstname} {candidateLastname} </span>,</p>
+
+        <p>Congratulations! You're just one step away from becoming a member of our team!</p>
+
+        <p>We are excited to inform you that we're almost there, and you'll soon be joining our team. To finalize this process, in line with our company's hiring policies, we kindly request that you <span class="highlight">register your details on our portal</span> and <span class="highlight">sign a mutual agreement</span> regarding the terms of employment.</p>
+
+        <p class="emoji">✨</p>
+        <p>We eagerly look forward to welcoming you on board! 🤟</p>
+
+        <p>Our <span class="highlight">Human Capital Management</span> team will be in touch with you to provide detailed information about your position, job description, monthly fixed salary, and the standard benefits provided by the company.</p>
+
+		<div class="feedback-section">
+            <h3>Team Feedback</h3>
+            <p><strong>Our feedback on your candidacy:</strong></p>
+            <p>{candidateFirstname}, {feedback}</p>
+            
+        </div>
+		
+        <div class="cta-button-container">
+            <a href="#" class="cta-button">Complete Your Registration</a>
+        </div>      
+
+    </div>
+    <div class="signature">
+        <p>Best regards,</p>
+        <p>Your Future Team at United Financial Corporation</p>
+    </div>
+</div>
+
+</body>
+</html>
